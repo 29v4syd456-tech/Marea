@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seguimiento semanal de hábitos · Marea</title>
+<meta name="description" content="Marca tus hábitos de lunes a domingo, consulta tu progreso semanal y reinicia las casillas cuando quieras. Se guarda en tu navegador.">
+<link rel="canonical" href="https://www.tudominio.com/habitos.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Seguimiento semanal de hábitos · Marea"><meta property="og:description" content="Marca tus hábitos de lunes a domingo, consulta tu progreso semanal y reinicia las casillas cuando quieras. Se guarda en tu navegador."><meta property="og:url" content="https://www.tudominio.com/habitos.html">
+<meta name="theme-color" content="#1F6F6B">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Marea</a>
+<nav class="main" aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="sueno.html">Sueño</a></li><li><a href="hidratacion.html">Agua</a></li><li><a href="habitos.html" aria-current="page">Hábitos</a></li><li><a href="actividad.html">Actividad</a></li></ul></nav></div></header>
+<main id="contenido"><div class="wrap">
+
+<section class="hero"><h1>Hábitos de la semana</h1><p>Marca cada día lo que hayas hecho. Las casillas se reinician solas cada lunes, o cuando tú quieras.</p></section>
+<div class="card stack" style="--c:var(--habit)">
+<div><p class="big" style="--c:var(--habit)" id="habit-pct">0 %</p><div class="bar" style="--c:var(--habit);margin-top:10px" role="progressbar" aria-label="Progreso semanal"><i id="habit-bar"></i></div></div>
+<div class="scroll"><table><thead><tr><th scope="col">Hábito</th><th scope="col">L</th><th scope="col">M</th><th scope="col">X</th><th scope="col">J</th><th scope="col">V</th><th scope="col">S</th><th scope="col">D</th><th scope="col">Total</th><th><span class="skip">Eliminar</span></th></tr></thead><tbody id="habit-body"></tbody></table></div>
+<p id="habit-empty" class="muted" hidden>No hay hábitos. Añade el primero abajo.</p>
+<form id="habit-form" class="row"><label for="habit-name" class="skip">Nuevo hábito</label><input id="habit-name" maxlength="40" placeholder="Nuevo hábito, por ejemplo: Leer 10 minutos" required><button class="btn" style="--c:var(--habit)" type="submit">Añadir hábito</button></form>
+<div><button class="btn alt" id="habit-reset" type="button">Reiniciar semana</button></div></div>
+</div></main>
+
+<footer><div class="wrap"><p><a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contacto</a><a href="privacidad.html">Política de privacidad</a></p>
+<p>Marea ofrece herramientas generales de bienestar. No sustituye el consejo de profesionales sanitarios.</p></div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>

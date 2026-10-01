@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculadora de sueño · Marea</title>
+<meta name="description" content="Calcula horas aproximadas para acostarte según la hora a la que quieres despertar, usando ciclos de sueño de unos 90 minutos.">
+<link rel="canonical" href="https://www.tudominio.com/sueno.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de sueño · Marea"><meta property="og:description" content="Calcula horas aproximadas para acostarte según la hora a la que quieres despertar, usando ciclos de sueño de unos 90 minutos."><meta property="og:url" content="https://www.tudominio.com/sueno.html">
+<meta name="theme-color" content="#1F6F6B">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Marea</a>
+<nav class="main" aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="sueno.html" aria-current="page">Sueño</a></li><li><a href="hidratacion.html">Agua</a></li><li><a href="habitos.html">Hábitos</a></li><li><a href="actividad.html">Actividad</a></li></ul></nav></div></header>
+<main id="contenido"><div class="wrap">
+
+<section class="hero"><h1>Calculadora de sueño</h1><p>Indica a qué hora quieres despertar y verás horas aproximadas para acostarte.</p></section>
+<div class="card stack" style="--c:var(--sleep)">
+<form id="sleep-form"><label for="wake">Hora de despertar</label>
+<div class="row"><input type="time" id="wake" value="07:00" required><button class="btn" style="--c:var(--sleep)" type="submit">Calcular</button></div></form>
+<div id="sleep-result" hidden><h2>Puedes acostarte sobre las</h2><ul class="times" id="sleep-out"></ul>
+<p class="small muted" style="margin-top:12px">Cálculo: ciclos de unos 90 minutos más unos 15 minutos para quedarte dormido/a.</p></div>
+<p class="note" style="--c:var(--sleep)"><strong>Importante:</strong> las necesidades de sueño varían según cada persona y su edad. Estos resultados son una referencia orientativa, no una pauta personalizada. Si duermes mal con frecuencia o te preocupa tu descanso, consulta con un profesional sanitario.</p>
+</div>
+</div></main>
+
+<footer><div class="wrap"><p><a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contacto</a><a href="privacidad.html">Política de privacidad</a></p>
+<p>Marea ofrece herramientas generales de bienestar. No sustituye el consejo de profesionales sanitarios.</p></div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>

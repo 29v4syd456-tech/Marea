@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recordatorio de hidratación · Marea</title>
+<meta name="description" content="Registra el agua que bebes, ajusta tu objetivo diario y activa recordatorios mientras tienes la página abierta. Tu progreso se guarda en tu navegador.">
+<link rel="canonical" href="https://www.tudominio.com/hidratacion.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Recordatorio de hidratación · Marea"><meta property="og:description" content="Registra el agua que bebes, ajusta tu objetivo diario y activa recordatorios mientras tienes la página abierta. Tu progreso se guarda en tu navegador."><meta property="og:url" content="https://www.tudominio.com/hidratacion.html">
+<meta name="theme-color" content="#1F6F6B">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Marea</a>
+<nav class="main" aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="sueno.html">Sueño</a></li><li><a href="hidratacion.html" aria-current="page">Agua</a></li><li><a href="habitos.html">Hábitos</a></li><li><a href="actividad.html">Actividad</a></li></ul></nav></div></header>
+<main id="contenido"><div class="wrap">
+
+<section class="hero"><h1>Hidratación</h1><p>Define tu objetivo, suma lo que bebes y mira cómo avanza el día. Se reinicia solo cada mañana.</p></section>
+<div class="grid">
+<div class="card stack" style="--c:var(--water)"><p class="big"><span id="water-ml">0</span> <span class="small muted">ml</span></p>
+<div class="bar" role="progressbar" aria-label="Progreso de agua"><i id="water-bar"></i></div><p class="muted" style="margin:0">Progreso: <strong id="water-pct">0 %</strong></p>
+<div class="row"><button class="btn" style="--c:var(--water)" data-add="250">+ Vaso (250 ml)</button><button class="btn" style="--c:var(--water)" data-add="500">+ Botella (500 ml)</button></div>
+<form id="water-custom" class="row"><label for="water-amount" class="small" style="margin:0">Otra cantidad (ml)</label><input id="water-amount" type="number" min="1" max="3000" inputmode="numeric" style="max-width:120px"><button class="btn alt" type="submit">Añadir</button></form>
+<div class="row"><button class="btn alt" id="water-undo" type="button">Deshacer último</button><button class="btn alt" id="water-reset" type="button">Poner a cero</button></div></div>
+<div class="card stack"><div><label for="water-goal">Objetivo diario (ml)</label><input id="water-goal" type="number" min="250" max="6000" step="50" inputmode="numeric"></div>
+<div><label for="water-remind">Recordarme cada</label><select id="water-remind"><option value="0">Sin recordatorio</option><option value="30">30 minutos</option><option value="60">1 hora</option><option value="90">1 hora y media</option></select>
+<p class="small muted" style="margin-top:8px">El aviso aparece solo mientras esta página está abierta.</p></div>
+<p class="note small">Cuánta agua necesita cada persona depende de su edad, actividad, clima y salud. Elige un objetivo que te resulte cómodo; ante dudas, pregunta a un profesional sanitario.</p></div>
+</div>
+</div></main>
+<div class="toast" id="water-toast" role="status" hidden><span>Es buen momento para beber un poco de agua.</span><button id="toast-close" type="button">Cerrar</button></div>
+<footer><div class="wrap"><p><a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contacto</a><a href="privacidad.html">Política de privacidad</a></p>
+<p>Marea ofrece herramientas generales de bienestar. No sustituye el consejo de profesionales sanitarios.</p></div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>
